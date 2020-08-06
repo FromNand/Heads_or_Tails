@@ -22,7 +22,7 @@ int main(void){
 		printf("Round %d: %s\n", i, tmp ? "Heads" : "Tails");
 	}
 	printf("Heads: %d, Tails: %d\n", count_h, count_t);
-	printf(count_h > count_t ? "You won!\n" : "You lost!\n");
+	printf(count_h > count_t ? "%s won!\n" : "%s lost!\n", user_name);
 
 	return 0;
 }
