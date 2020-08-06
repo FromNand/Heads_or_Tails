@@ -15,6 +15,7 @@ int main(void){
 		printf("Round %d: %s\n", i, tmp ? "Heads" : "Tails");
 	}
 	printf("Heads: %d, Tails: %d\n", count_h, count_t);
+	printf(count_h > count_t ? "You won!\n" : "You lost!\n");
 
 	return 0;
 }
