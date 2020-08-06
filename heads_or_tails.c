@@ -1,10 +1,17 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<time.h>
 
 int main(void){
 	int i, tmp;
 	int count_h = 0, count_t = 0;
+	char user_name[100];
+
+	printf("Who are you?\n> ");
+	fgets(user_name, 100, stdin);
+	user_name[strlen(user_name)-1] = '\0';
+	printf("Hello, %s!\n", user_name);
 
 	srand((unsigned int) time(NULL));
 
